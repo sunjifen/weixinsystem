@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>我要升级</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<script type="text/javascript" src="js/flexible.js"></script> 
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="layer/layer.js"></script>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/total-css.css">
+</head>
+
+<body>
+	<div class="upgrade">
+		<div class="my-team-box">
+			<div class="my-team-box-img">	
+				<img src="images/xiaoali.jpg" alt="">
+			</div>
+			<div class="my-team-box-div my-team-separate-in">
+				<div>用户名：<span>此为用户名</span></div>
+			</div>
+		</div>
+		<div class="upgrade-inner">
+			<div class="upgrade-inner-1">现在等级：<span>会员等级1</span></div>
+			<div class="upgrade-level">
+				<div>升级等级</div>
+				<select class="my-team-select">
+		            <option class="my-team-option">1级/2级</option>
+		            <option class="my-team-option">2级/3级</option>
+		            <option class="my-team-option">3级/4级</option>
+		            <option class="my-team-option">4级/5级</option>
+	       	 	</select>
+			</div>
+			<div class="upgrade-level">
+				<div>支付方式</div>
+				<select class="my-team-select">
+		            <option class="my-team-option">支付宝</option>
+	       	 	</select>
+			</div>
+			<div class="upgrade-input">
+				支付宝账户:<input type="text" name="" value=""  placeholder="在此输入支付宝账户">
+			</div>
+			<div class="upgrade-input">
+				具体金额:<input type="text" name="" value=""  placeholder="在此输入具体金额">
+			</div>
+			<div class="upgrade-input">
+				交易日期:<input type="text" name="" value=""  placeholder="具体的年月日">
+			</div>
+			<div class="upgrade-input">
+				备注:<input type="text" name="" value=""  placeholder="无可不填">
+			</div>
+			<div class="upgrade-credentials">
+				<div class="upgrade-credentials-io">打款凭证：<br>（1-3张）</div>
+			<!-- 	<div class="upgrade-credentials-imgs">
+					<img src="images/1@2x.png" alt="">
+					<img src="images/1@2x.png" alt="">
+					<img src="images/1@2x.png" alt="">
+				</div> -->
+				<div class="upgrade-credentials-ug">
+					<div class="upgrade-credentials-sc">
+						<img src="images/upgrade-add.png" alt="">
+					</div>
+					<input type="file" name="" value="" class="feedback-add-input">
+				</div>
+			</div>
+			<div class="upgrade-per">
+				<div>请打款至：10000000000</div>
+				<div>支付宝账号：150000000</div>
+				<div>如有问题，请联系客服：40000000</div>
+			</div>
+			<div class="feedback-btn">确认升级</div>
+		</div>
+		<!-- 底部菜单 -->
+		<div class="index-head-classify">
+			<div class="index-head-classify-inner">
+				<a href="">
+					<div class="index-head-classify-1">
+						<div class="index-head-classify-1-img">
+							<img src="images/f1.png" alt="">
+						</div>
+						<p class="index-head-classify-1-p classify-green">首页</p>
+					</div>
+				</a>
+				<a href="">
+					<div class="index-head-classify-2">
+						<div class="index-head-classify-1-img">
+							<img src="images/f2.png" alt="">
+						</div>
+						<p class="index-head-classify-1-p">信息中心</p>
+					</div>
+				</a>
+				<a href="">
+					<div class="index-head-classify-3">
+						<div class="index-head-classify-1-img">
+							<img src="images/f03.png" alt="">
+						</div>
+						<p class="index-head-classify-1-p">商城</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/total-js.js"></script>
+<script>
+//确认升级
+$('.feedback-btn').click(function(){
+	layer.confirm('确认升级当前账户？', {
+  		btn: ['确认','取消'] //按钮
+	}, function(){
+  		layer.msg('已提交', {icon: 1});
+	});
+})
+</script>
+</html>

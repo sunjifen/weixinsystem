@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户收货地址</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<script type="text/javascript" src="js/flexible.js"></script> 
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="layer/layer.js"></script>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/total-css.css">
+</head>
+
+<body style="background: #e2e2e2;">
+	<div class="all-address">
+		<div class="all-address-inner">
+			<div class="all-address-out">
+				<div class="all-address-out-box">
+					<div>此为收货人姓名</div>
+					<div>此为收货人电话</div>
+				</div>
+				<div class="all-address-out-1">客户收货地址</div>
+			</div>
+			<div class="all-address-cen">
+				<div class="all-address-in">
+					<img src="images/add-address-2.png" alt="">
+					<div>设为当前默认收货地址</div>
+				</div>
+				<div class="all-address-all">
+					<a href="">
+						<div class="all-address-all-1">
+							<img src="images/all-address-1.png" alt="">
+							<div>编辑</div>
+						</div>
+					</a>
+					<div class="all-address-all-2">
+						<img src="images/all-address-2.png" alt="">
+						<div>删除</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="all-address-inner">
+			<div class="all-address-out">
+				<div class="all-address-out-box">
+					<div>此为收货人姓名</div>
+					<div>此为收货人电话</div>
+				</div>
+				<div class="all-address-out-1">客户收货地址</div>
+			</div>
+			<div class="all-address-cen">
+				<div class="all-address-in">
+					<img src="images/add-address-1.png" alt="">
+					<div>设为当前默认收货地址</div>
+				</div>
+				<div class="all-address-all">
+					<a href="">
+						<div class="all-address-all-1">
+							<img src="images/all-address-1.png" alt="">
+							<div>编辑</div>
+						</div>
+					</a>
+					<div class="all-address-all-2">
+						<img src="images/all-address-2.png" alt="">
+						<div>删除</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="all-address-inner">
+			<div class="all-address-out">
+				<div class="all-address-out-box">
+					<div>此为收货人姓名</div>
+					<div>此为收货人电话</div>
+				</div>
+				<div class="all-address-out-1">客户收货地址</div>
+			</div>
+			<div class="all-address-cen">
+				<div class="all-address-in">
+					<img src="images/add-address-1.png" alt="">
+					<div>设为当前默认收货地址</div>
+				</div>
+				<div class="all-address-all">
+					<a href="">
+						<div class="all-address-all-1">
+							<img src="images/all-address-1.png" alt="">
+							<div>编辑</div>
+						</div>
+					</a>
+					<div class="all-address-all-2">
+						<img src="images/all-address-2.png" alt="">
+						<div>删除</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href=""><div class="feedback-btn">新增收货地址</div></a>
+	</div>
+		<!-- 底部菜单 -->
+	<div class="index-head-classify">
+		<div class="index-head-classify-inner">
+			<a href="">
+				<div class="index-head-classify-1">
+					<div class="index-head-classify-1-img">
+						<img src="images/f1.png" alt="">
+					</div>
+					<p class="index-head-classify-1-p classify-green">首页</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="index-head-classify-2">
+					<div class="index-head-classify-1-img">
+						<img src="images/f02.png" alt="">
+					</div>
+					<p class="index-head-classify-1-p">信息中心</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="index-head-classify-3">
+					<div class="index-head-classify-1-img">
+						<img src="images/f03.png" alt="">
+					</div>
+					<p class="index-head-classify-1-p">商城</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/total-js.js"></script>
+<script>
+//删除地址
+$('.all-address-all-2').click(function(){
+	layer.confirm('确定删除当前收货地址？', {
+  		btn: ['确认','取消'] //按钮
+	}, function(){
+  		layer.msg('地址已删除', {icon: 1});
+	});
+})
+$(window).load(function(){
+  // $("body").scrollTop(10);//控制滚动条下移10px
+  if( $("body").scrollTop()>0 ){
+    // alert("有滚动条");
+     $('body').height('auto');
+  }else{
+    // alert("没有滚动条");
+    $('body').height('100%');
+  }
+});
+</script>
+</html>

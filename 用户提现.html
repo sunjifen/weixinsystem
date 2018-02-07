@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户提现</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<script type="text/javascript" src="js/flexible.js"></script> 
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="layer/layer.js"></script>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/total-css.css">
+</head>
+
+<body>
+	<div class="user-withdrawal">
+		<img src="images/personal-information-1.jpg" alt="">
+		<div class="user-withdrawal-box">
+			<img src="images/user-withdrawal-1.png" alt="">
+			<p>银行卡卡号</p>
+			<div>0000 **** **** 0000</div>
+		</div>
+		<div class="add-address-box">
+			<div class="feedback-input">
+				持卡人:<input type="text" name="" value=""  placeholder="用户名">
+			</div>
+			<div class="feedback-input">
+				开户行:<input type="text" name="" value=""  placeholder="具体到哪个分行">
+			</div>
+			<div class="feedback-input">
+				卡号:<input type="text" name="" value=""  placeholder="用户本人卡号">
+			</div>
+		</div>
+		<div class="personal-information-btn">下一步</div>
+	</div>
+		<!-- 底部菜单 -->
+	<div class="index-head-classify">
+		<div class="index-head-classify-inner">
+			<a href="">
+				<div class="index-head-classify-1">
+					<div class="index-head-classify-1-img">
+						<img src="images/f1.png" alt="">
+					</div>
+					<p class="index-head-classify-1-p classify-green">首页</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="index-head-classify-2">
+					<div class="index-head-classify-1-img">
+						<img src="images/f02.png" alt="">
+					</div>
+					<p class="index-head-classify-1-p">信息中心</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="index-head-classify-3">
+					<div class="index-head-classify-1-img">
+						<img src="images/f03.png" alt="">
+					</div>
+					<p class="index-head-classify-1-p">商城</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/total-js.js"></script>
+<script>
+//下一步
+$('.personal-information-btn').click(function(){
+	layer.confirm('确定保存当前账户', {
+  		btn: ['确认','取消'] //按钮
+	}, function(){
+  		layer.msg('保存成功', {icon: 1});
+	});
+})
+</script>
+</html>

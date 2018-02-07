@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户信息</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<script type="text/javascript" src="js/flexible.js"></script> 
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="layer/layer.js"></script>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/total-css.css">
+</head>
+
+<body>
+	<div class="user-information">
+		<div class="user-information-inner">
+			<img src="images/personal-information-1.jpg" alt="">
+			<div class="user-information-box">
+				<div class="user-information-out">
+					<div>用户名</div>
+					<div>会员名：用户名</div>
+				</div>
+				<div class="personal-in-tx user-information-inner-tx">
+					<img src="images/xiaoali.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="user-information-cen">
+			<a href="">
+				<div class="user-information-cen-1">
+					<img src="images/user-information-1.png" alt="">
+					<div>修改用户头像</div>
+					<input type="file" name="" value="" class="user-input">
+				</div>
+			</a>
+			<div class="user-information-cen-in">
+				<div class="user-information-cen-1">
+					<img src="images/user-information-2.png" alt="">
+					<input type="text" name="" value="" placeholder="修改用户名">
+				</div>
+				<div class="user-information-cen-1">
+					<img src="images/user-information-3.png" alt="">
+					<input type="text" name="" value="" placeholder="修改用户密码">
+				</div>
+				<a href="">
+					<div class="user-information-cen-2">
+						<img src="images/user-information-4.png" alt="" class="user-img1">
+						<div>修改收货地址</div>
+						<img src="images/personal-information-6.png" alt="" class="user-img2">
+					</div>
+				</a>
+			</div>
+			<div class="personal-information-btn">下一步</div>
+		</div>
+	</div>
+		<!-- 底部菜单 -->
+	<div class="index-head-classify">
+		<div class="index-head-classify-inner">
+			<a href="">
+				<div class="index-head-classify-1">
+					<div class="index-head-classify-1-img">
+						<img src="images/f1.png" alt="">
+					</div>
+					<p class="index-head-classify-1-p classify-green">首页</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="index-head-classify-2">
+					<div class="index-head-classify-1-img">
+						<img src="images/f02.png" alt="">
+					</div>
+					<p class="index-head-classify-1-p">信息中心</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="index-head-classify-3">
+					<div class="index-head-classify-1-img">
+						<img src="images/f03.png" alt="">
+					</div>
+					<p class="index-head-classify-1-p">商城</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/total-js.js"></script>
+<script>
+//下一步
+$('.personal-information-btn').click(function(){
+	layer.confirm('确认更改当前资料？', {
+  		btn: ['确认','取消'] //按钮
+	}, function(){
+  		layer.msg('更改成功', {icon: 1});
+	});
+})
+</script>
+</html>
